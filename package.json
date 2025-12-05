@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces",
+    "test": "npm run build --workspace=@metronome-integration/types && npm run test --workspaces",
     "dev:mock": "npm run dev --workspace=mock-metronome-server",
     "dev:billing": "npm run dev --workspace=billing-service",
     "dev:billing:no-watch": "npm run dev:no-watch --workspace=billing-service",
