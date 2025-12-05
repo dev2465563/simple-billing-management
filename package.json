@@ -1,0 +1,22 @@
+{
+  "name": "metronome-integration",
+  "version": "1.0.0",
+  "description": "Metronome billing integration with Stripe payment processing",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "frontend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:mock": "npm run dev --workspace=mock-metronome-server",
+    "dev:billing": "npm run dev --workspace=billing-service",
+    "dev:billing:no-watch": "npm run dev:no-watch --workspace=billing-service",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "start:billing": "npm run start --workspace=billing-service"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  }
+}
