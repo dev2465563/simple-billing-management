@@ -163,7 +163,7 @@ npm run dev:billing
 
 The billing service will start on `http://localhost:3000` and serve the web UI.
 
-## 🎨 Web UI (Next.js Frontend)
+## Web UI (Next.js Frontend)
 
 The project includes a modern Next.js frontend with a professional UI.
 
